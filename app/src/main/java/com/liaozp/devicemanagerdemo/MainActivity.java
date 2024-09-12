@@ -11,6 +11,7 @@ import android.os.Bundle;
 
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
@@ -25,10 +26,10 @@ import com.liaozp.devicemanagerdemo.manager.DeviceAdminManager;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
     public static final String TAG = "neildemo";
 
-    private AppCompatButton mBtnIsDeviceOwner;
-    private AppCompatButton btnLock, mBtnResetPwToken, mBtnCleanPwToken;
-    private AppCompatButton btnLockPassword;
-    private AppCompatButton btnApiTest;
+    private Button mBtnIsDeviceOwner;
+    private Button btnLock, mBtnResetPwToken, mBtnCleanPwToken;
+    private Button btnLockPassword;
+    private Button btnApiTest;
     private DeviceAdminManager deviceAdminManager;
     private DevicePolicyManager devicePolicyManager;
     private ComponentName componentName;
